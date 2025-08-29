@@ -1,0 +1,168 @@
+body {
+    font-family: 'Comic Sans MS', 'Chalkduster', sans-serif; /* Estilo de lousa/rascunho */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    border: 3px solid #000;
+    background-color: #fff;
+}
+
+/* Coluna das Cores */
+.color-palette-container {
+    width: 200px;
+    border-right: 3px solid #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-palette-container h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#color-palette {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+#color-palette li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.color-swatch {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    margin-right: 10px;
+    cursor: grab;
+}
+
+.color-swatch.locked {
+    background-image: repeating-linear-gradient(45deg, #ccc, #ccc 10px, #eee 10px, #eee 20px);
+    cursor: not-allowed;
+}
+
+.puzzle-counter {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hint-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-container img {
+    max-width: 300px;
+    max-height: 200px;
+    filter: grayscale(100%); /* Deixa a imagem em preto e branco */
+}
+
+#brand-name {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.revealed-words-container {
+    border: 2px solid #000;
+    padding: 10px;
+    min-height: 50px;
+    text-align: center;
+}
+
+/* Estilos do Modal de Dica */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 30px;
+    border: 2px solid #000;
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Adicione no final do style.css */
+
+/* Container para as fichas de cores aplicadas */
+#applied-colors-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Dá um espaço para as fichas */
+    gap: 10px; /* Espaçamento entre as fichas */
+}
+
+/* Estilo da própria ficha de cor */
+.color-chip {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Deixa a ficha redonda */
+    border: 2px solid #000;
+    transition: transform 0.2s;
+}
