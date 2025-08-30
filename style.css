@@ -1,5 +1,5 @@
 body {
-    font-family: 'Comic Sans MS', 'Chalkduster', sans-serif; /* Estilo de lousa/rascunho */
+    font-family: 'Comic Sans MS', 'Chalkduster', sans-serif;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
@@ -74,6 +74,13 @@ body {
 header {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+
+.lives-counter {
+    font-size: 2em;
+    margin-right: auto;
+    padding-left: 10px;
 }
 
 #hint-button {
@@ -98,7 +105,23 @@ header {
 #logo-container img {
     max-width: 300px;
     max-height: 200px;
-    filter: grayscale(100%); /* Deixa a imagem em preto e branco */
+    filter: grayscale(100%);
+}
+
+#applied-colors-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 10px;
+}
+
+.color-chip {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    transition: transform 0.2s;
 }
 
 #brand-name {
@@ -113,7 +136,7 @@ header {
     text-align: center;
 }
 
-/* Estilos do Modal de Dica */
+/* Estilos dos Modais (Dica e Game Over) */
 .modal {
     display: none; 
     position: fixed;
@@ -147,22 +170,29 @@ header {
     cursor: pointer;
 }
 
-/* Adicione no final do style.css */
-
-/* Container para as fichas de cores aplicadas */
-#applied-colors-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px; /* Dá um espaço para as fichas */
-    gap: 10px; /* Espaçamento entre as fichas */
+#restart-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
 }
 
-/* Estilo da própria ficha de cor */
-.color-chip {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%; /* Deixa a ficha redonda */
-    border: 2px solid #000;
-    transition: transform 0.2s;
+#restart-button:hover {
+    background-color: #45a049;
+}
+
+/* Animação de tremor para feedback de erro */
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+.shake-error {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
