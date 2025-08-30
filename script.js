@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { brandName: "Meta", logoFile: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/1200px-Meta-Logo.png", requiredColors: ['meta-blue'], revealedWord: "TECNOLOGIA" },
         { brandName: "Zona Sul", logoFile: "https://cdn.prod.website-files.com/672409b074922677cd2f729e/6760ddb18a27cf335cd3093a_zonasul-logo.png", requiredColors: ['zona-sul-green'], revealedWord: "ALIMENTA" },
         { brandName: "Parmê", logoFile: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmCb110xICx6HK25XqGgH7FIYieexyQHXSsoIrlLM5CntaH2ZUM1HsQdfiwH6h4hxzQE&usqp=CAU", requiredColors: ['parme-red', 'parme-green'], revealedWord: "NOSSAS" },
-        { brandName: "Vale", logoFile: "images/vale-logo.png", requiredColors: ['vale-green', 'vale-yellow'], revealedWord: "VIDAS," },
-        { brandName: "Americanas", logoFile: "images/americanas-logo.png", requiredColors: ['americanas-red'], revealedWord: "TRANSFORMANDO O FUTURO." }
+        { brandName: "Vale", logoFile: "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Logotipo_Vale.svg/1200px-Logotipo_Vale.svg.png", requiredColors: ['vale-green', 'vale-yellow'], revealedWord: "VIDAS," },
+        { brandName: "Americanas", logoFile: "https://play-lh.googleusercontent.com/sVOx267sxWUnIOyxMNxyKF_GbJdqt0BbFOvVHmHbP6Vn2FfWGg_B9SOBo18ExsCLaGM=w600-h300-pc0xffffff-pd", requiredColors: ['americanas-red'], revealedWord: "TRANSFORMANDO O FUTURO." }
     ];
     const universalHint = "Talvez você deva pensar o contrário, ou melhor dizendo, o que for complementar.";
     const allColors = {
