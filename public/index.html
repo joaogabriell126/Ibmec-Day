@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma das Marcas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <aside class="color-palette-container">
+            <h2>CORES</h2>
+            <ul id="color-palette">
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div id="lives-counter" class="lives-counter"></div>
+                <div class="hint-container">
+                    <button id="hint-button">?</button>
+                </div>
+            </header>
+            
+            <div class="logo-area">
+                <div id="logo-container" class="drop-zone">
+                </div>
+                <div id="applied-colors-container"></div>
+                <p id="brand-name"></p>
+            </div>
+
+            <footer>
+                <div class="revealed-words-container">
+                    <h3>Palavras Encontradas:</h3>
+                    <p id="revealed-words">-</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <div id="hint-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <p id="hint-text">Aqui vai a dica enigmática.</p>
+        </div>
+    </div>
+
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <h2>Fim de Jogo!</h2>
+            <p>Você usou todas as suas tentativas.</p>
+            <button id="restart-button">Tentar Novamente</button>
+        </div>
+    </div>
+    
+    <div id="debug-status" class="debug-panel">
+        <p>Status Conexão: <strong id="ws-status">Conectando...</strong></p>
+        <p>Última Cor Recebida: <strong id="last-data">Nenhuma</strong></p>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
