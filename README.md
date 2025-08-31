@@ -1,4 +1,4 @@
-**O MELHOR TRABRALHO DA IBMEC**
+**O MELHOR TRABALHO DA IBMEC**
 
 1-Joga no terminal essa porra 
 node server.js 
