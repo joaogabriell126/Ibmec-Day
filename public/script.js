@@ -1,23 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- CONFIGURAÇÃO DO ENIGMA ---
     const puzzles = [
-        { brandName: "Meta", logoFile: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/1200px-Meta-Logo.png", requiredColors: ['orange'], revealedWord: "Novo" },
+        { brandName: "Meta", logoFile: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/1200px-Meta-Logo.png", requiredColors: ['orange'], revealedWord: "Nova" },
         { brandName: "Michelin", logoFile: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5S4BsoRcvzT2n4qhnlo5MiwAtY6SkqJZZeA&s", requiredColors: ['black', 'purple'], revealedWord: "bebida" },
         { brandName: "Zona Sul", logoFile: "https://cdn.prod.website-files.com/672409b074922677cd2f729e/6760ddb18a27cf335cd3093a_zonasul-logo.png", requiredColors: ['green'], revealedWord: "sustentavel" },
-        { brandName: "Parmê", logoFile: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmCb110xICx6HK25XqGgH7FIYieexyQHXSsoIrlLM5CntaH2ZUM1HsQdfiwH6h4hxzQE&usqp=CAU", requiredColors: ['green', 'purple'], revealedWord: "feito" },
-        { brandName: "Transfero", logoFile: "https://media.licdn.com/dms/image/v2/D4D0BAQEDvtBzGpPCjA/company-logo_200_200/company-logo_200_200/0/1702063736083/transfero_group_logo?e=2147483647&v=beta&t=_L9gfMwpX8dZP36CjqXJqEyQM0gSYobOfhcFjd11-Jc", requiredColors: ['black', 'yellow'], revealedWord: "com" },
+        { brandName: "Parmê", logoFile: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmCb110xICx6HK25XqGgH7FIYieexyQHXSsoIrlLM5CntaH2ZUM1HsQdfiwH6h4hxzQE&usqp=CAU", requiredColors: ['green', 'purple'], revealedWord: "feito com" },
         { brandName: "Americanas", logoFile: "https://play-lh.googleusercontent.com/sVOx267sxWUnIOyxMNxyKF_GbJdqt0BbFOvVHmHbP6Vn2FfWGg_B9SOBo18ExsCLaGM=w600-h300-pc0xffffff-pd", requiredColors: ['green'], revealedWord: "Guaraná da Amazônia." }
     ];
     const universalHint = "Talvez você deva pensar o contrário, ou melhor dizendo, o que for complementar.\nObservação: Algumas marcas, possuem duas cores como principais, por isso, será necessário usar duas cores.";
 
     const allColors = {
-        'purple': { name: 'Magenta', hex: '#FF00FF', unlocked: false },
-        'green': { name: 'Verde', hex: '#009739', unlocked: false },
-        'blue': { name: 'Azul', hex: '#0064E0', unlocked: false },
-        'black': { name: 'Preto', hex: '#000', unlocked: false },
-        'red': { name: 'Vermelho', hex: '#D92E2E', unlocked: false },
-        'orange': { name: 'Laranja', hex: '#FF8C00', unlocked: false },
-        'yellow': { name: 'Amarelo', hex: '#FDB913', unlocked: false }
+        'purple': { name: 'Magenta', hex: '#FF00FF', unlocked: true },
+        'green': { name: 'Verde', hex: '#009739', unlocked: true },
+        'blue': { name: 'Azul', hex: '#0064E0', unlocked: true },
+        'black': { name: 'Preto', hex: '#000', unlocked: true },
+        'red': { name: 'Vermelho', hex: '#D92E2E', unlocked: true },
+        'orange': { name: 'Laranja', hex: '#FF8C00', unlocked: true },
+        'yellow': { name: 'Amarelo', hex: '#FDB913', unlocked: true }
     };
 
     // --- VARIÁVEIS DE ESTADO DO JOGO ---
