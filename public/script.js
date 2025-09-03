@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { brandName: "Parmê", logoFile: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmCb110xICx6HK25XqGgH7FIYieexyQHXSsoIrlLM5CntaH2ZUM1HsQdfiwH6h4hxzQE&usqp=CAU", requiredColors: ['green', 'purple'], revealedWord: "feito com" },
         { brandName: "Americanas", logoFile: "https://play-lh.googleusercontent.com/sVOx267sxWUnIOyxMNxyKF_GbJdqt0BbFOvVHmHbP6Vn2FfWGg_B9SOBo18ExsCLaGM=w600-h300-pc0xffffff-pd", requiredColors: ['green'], revealedWord: "Guaraná da Amazônia." }
     ];
-    const universalHint = "Talvez você deva pensar o contrário, ou melhor dizendo, o que for complementar.\nObservação: Algumas marcas, possuem duas cores como principais, por isso, será necessário usar duas cores.";
+    const universalHint = "Talvez você deva pensar o contrário, ou melhor dizendo, o que for complementar.Observação: Algumas marcas, possuem duas cores como principais, por isso, será necessário usar duas cores.";
 
     const allColors = {
         'purple': { name: 'Magenta', hex: '#FF00FF', unlocked: true },
