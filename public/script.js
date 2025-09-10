@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { brandName: "Parmê", logoFile: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmCb110xICx6HK25XqGgH7FIYieexyQHXSsoIrlLM5CntaH2ZUM1HsQdfiwH6h4hxzQE&usqp=CAU", requiredColors: ['green', 'purple'], revealedWord: "feito com" },
         { brandName: "Americanas", logoFile: "https://raichu-uploads.s3.amazonaws.com/logo_americanas-com-loja-online_jsxyKk.png", requiredColors: ['green'], revealedWord: "Guaraná da Amazônia." }
     ];
-    const universalHint = "Talvez você deva pensar o contrário, ou melhor dizendo, o que for complementar.Observação: Algumas marcas, possuem duas cores como principais, por isso, será necessário usar duas cores.";
+    const universalHint = "<strong>Dica:</strong> Talvez você deva pensar o contrário, ou melhor dizendo, o que for complementar. <br><strong>Observação:</strong> Algumas marcas, possuem duas cores, por isso, será necessário usar duas cores.";
 
     const allColors = {
         'purple': { name: 'Magenta', hex: '#FF00FF', unlocked: false },
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPuzzleIndex = 0;
         revealedWords = [];
         gameOverModalEl.style.display = 'none';
-        hintTextEl.textContent = universalHint;
+        hintTextEl.innerHTML = universalHint;
         revealedWordsEl.textContent = '-';
         updateLivesDisplay();
         renderColorPalette();
